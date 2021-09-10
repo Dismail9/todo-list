@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app__nav-bar {
+  position: static; 
+  top: 0; 
+  width: 100%; 
+  height: 56px;
+}
+
+.app__content {
+  height: calc(100% - 56px);
+  width: 100%;
+}
+
+.app__content_side_bar {
+  width: 300px;
+  height: 100%;
+}
+
+.app__content_main {
+  padding-top: 5rem;
+  margin: 0 auto;
+  width: 600px;
+
+}
+
+.app__content_right_bar {
+  width: 300px;
+  height: 100%;
+}
+
+.app__buttonbar {
+  display: flex;
+  position: static;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+.app__buttonbar_modal_button_add {
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: whitesmoke;
+  transition: all 1s ease;
+}
+
+.app__buttonbar_modal_button_add_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.app__buttonbar_sort_button {
+  align-items: center;
+  width: 130px;
+  height: 25px;
+  border-radius: 8px;
+  background: whitesmoke;
+  opacity: 1;
+  margin-left:  auto;
+  display: flex;
+}
+
+.app__buttonbar_sort_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.app__buttonbar_modal_button_add:active,  
+.app__buttonbar_sort_button:active{
+  filter: drop-shadow(0 0 0px gray);
+}
+
+.app__buttonbar_modal_button_add:hover,
+.app__buttonbar_sort_button:hover {
+  /* background: rgba(158, 158, 158, 0.3); */
+  background: rgba(190, 190, 190, 0.8);
+}
+
+.app__todo-list {
+  padding-top: 10px;
+}
+
+.app__drop_down_menu {
+  position: relative;
+  visibility: visible;
+  padding: 0 0 0 27rem;
+  inset: 0px auto auto 0px;
+}
+.app__drop_down_menu-close {
+  visibility: hidden;
+}
+
+.app__drop_down_menu_ul {
+  list-style: none;
+  background-color: white;
+  width: 200px;
+  height: 140px;
+  border: 2px solid rgba(190, 190, 190, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  padding: 10px 0 10px 0;
+}
+
+.app__drop_down_menu_li {
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.app__drop_down_menu_li:hover {
+  background: rgba(190, 190, 190, 0.8);
+}
+
+.app__drop_down_menu_icon {
+  width: 17px;
+  height: 17px;
+}
+
+.app__drop_down_menu_p {
+  margin-left: 12px;
+}
+
+.app__drop_down_menu_li_content {
+  display: flex;
+}

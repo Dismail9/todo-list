@@ -1,0 +1,42 @@
+.modal-window__background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window__main {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-window__input_description {
+  min-height: 100px;
+  max-height: 400px;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.modal-window__input_tags {
+  width: 300px;
+}
+
+.modal-window__input_deadline {
+  width: 300px;
+}
+
+.modal-window__button {
+  margin-left: auto;
+}
+
